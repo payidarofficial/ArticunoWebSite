@@ -1,0 +1,212 @@
+<!-- 
+    - Pâyidar Code
+    - Articuno
+-->
+
+<html>
+    <head>
+        <title>Articuno ~ Profesyonel Tasarım</title>
+
+        <!-- Meta -->
+        <meta name="title" content="Articuno ~ Profesyonel Tasarım">
+        <meta name="description" content="Profesyonel Tasarım Hizmeti">
+        <meta name="robots" content="index,follow">
+        <meta name="author" content="Pâyidar">
+        <meta name="theme-color" content="#ff0000">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <!-- Link -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/progress-bar.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/css/jquery.rprogessbar.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <!-- Script -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+        <script src="https://kit.fontawesome.com/fe5b439e83.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/js/jQuery.rProgressbar.min.js"></script>
+        <script src="assets/js/active.js"></script>
+        <script src="assets/js/style.js"></script>
+        <script crossorigin='anonymous' integrity='sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=' src='https://code.jquery.com/jquery-3.6.0.js'></script>
+    </head>
+    <body>
+        <!-- İlerleme Barı -->
+        <div id="ilerleme-bari">
+            <div id="bar"></div>
+        </div>
+        <!-- /İlerleme Barı -->
+
+        <!-- Yuvarlak Banner Başlar -->
+        <div class="yuvarlak-banner"></div>
+        <div class="yuvarlak-banner-2"></div>
+        <!-- /Yuvarlak Banner Biter -->
+
+        <!-- Menu Başlar -->
+        <div class="menu">
+            <div class="menubox">
+                <div>
+                    <img src="./assets/img/4852a4d8f48ac8ad80a190b9129950e7.png">
+                </div>
+                <div>
+                    <span>Articuno</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-moon" onclick="darkmode_payidar()" id="moon"></i>
+                    <i class="fa-solid fa-sun" onclick="darkmode_payidar2()" id="sun"></i>
+                    <i class="fa-solid fa-bars" onclick="menuac()" id="ac"></i>
+                    <i class="bi bi-x-lg" onclick="menukapa()" id="kapat"></i>
+                </div>
+            </div>
+        </div>
+        <!-- /Menu Biter -->
+
+        <!-- Mobil Menu Başlar -->
+        <div id="mobile-menu">
+            <div class="menubox">
+                <div>
+                    <br/><br/><br/><br/><br/><br/><h1>Menu</h1>
+                </div>
+                <div>
+                    <a href="about.html">Hakkımda</a>
+                    <a href="contact.html">İletişim</a>
+                </div>
+            </div>
+        </div>
+        <!-- /Mobil Menu Biter -->
+
+        <!-- Banner Başlar -->
+        <div class="banner">
+            <div class="banner-box">
+                <div>
+                    <h1 class="animate__fadeInDown">Articuno</h1>
+                    <p class="animate__fadeInDown">Profesyonel Logo Hizmeti</p><br/>
+                    <center><a class="animate__fadeInDown" href="https://payidar-code.blogspot.com">İletişim</a></center>
+                </div>
+                <div>
+                    <img class="animate__fadeInDown" src="./assets/img/4852a4d8f48ac8ad80a190b9129950e7.png">
+                </div>
+            </div>
+        </div>
+        <!-- /Banner Biter -->
+
+        <!-- Copyright Başlar -->
+        <div class="copyright">
+            <span>Pâyidar Code</span>
+        </div>
+        <!-- /Copyright Biter -->
+
+        <!-- Slider -->
+        <!-- <div id="slider">
+            <figure>
+                <img src="./assets/img/3172939-suleymaniye-camii-gunbatimi.jpg">
+                <img src="./assets/img/446e50b239858de4730d00a0fe074347.jpg">
+                <img src="./assets/img/4852a4d8f48ac8ad80a190b9129950e7.png">
+                <img src="./assets/img/cool-sunglasses-girl-in-neon-lights-of-city-6l.jpg">
+                <img src="./assets/img/payidarcode_tasarim_wallpaper.png">
+            </figure>
+        </div> -->
+
+        <!-- Scriptler Başlar -->
+        <script>
+            // Pâyidar
+            var image = document.getElementsByClassName('articuno_resim');
+            new simpleParallax(image, {
+	            scale: 1.5
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if($(this).scrollTop() > 100){
+                        $('.menu').css({
+                            "padding": "10px",
+                            "box-shadow": "0px 5px 20px 0px rgba(0, 0, 0, .2)"
+                        })
+                    } else{
+                        $('.menu').css({
+                            "padding": "20px",
+                            "box-shadow": "initial"
+                        })
+                    }
+                })
+            })
+        </script>
+        <script>!function (o) { o.fn.prognroll = function (r) { var t = o.extend({ height: 5, color: "#50bcb6", custom: !1 }, r), i = o("<span>", { class: "prognroll-bar" }); return this.each(function (r, n) { if (o(this).data("prognroll")) return !1; o(this).data("prognroll", !0), o("body").prepend(i).end().find(".prognroll-bar").not(":first").remove(), o(".prognroll-bar").css({ position: "fixed", top: 0, left: 0, width: 0, height: t.height, backgroundColor: t.color, zIndex: 2147483647 }); var e = { windowScrollTop: o(window).scrollTop(), windowOuterHeight: o(window).outerHeight(), bodyHeight: o(document).height() }; function l() { o(window).scroll(function (r) { r.preventDefault(), e.windowScrollTop = o(window).scrollTop(), e.windowOuterHeight = o(window).outerHeight(), e.bodyHeight = o(document).height(); var t = e.windowScrollTop / (e.bodyHeight - e.windowOuterHeight) * 100; o(".prognroll-bar").css("width", t + "%") }) } !1 === t.custom ? l() : "none" == o(this).css("max-height") ? l() : o(this).scroll(function (r) { r.preventDefault(); var t = o(this).scrollTop(), i = o(this).outerHeight(), n = t / (o(this).prop("scrollHeight") - i) * 100; o(".prognroll-bar").css("width", n + "%") }); var h = e.windowScrollTop / (e.bodyHeight - e.windowOuterHeight) * 100; o(".prognroll-bar").css("width", h + "%") }) } }(jQuery);</script>
+        <script>
+            $(function() {
+                $("body").prognroll({
+                    height: 5,
+                    color: "#ff0000", // progress bar background color
+                    custom: true // if you make it true, you can add your custom div and see it&#39;s scroll progress on the page
+                });
+            });
+        </script>
+        <script>
+            $('#kapat').css({
+                "display": "none"
+            })
+            function menuac() {
+                $('#mobile-menu').css({
+                    "display": "initial"
+                })
+                $('.menu').css({
+                    "box-shadow": "initial"
+                })
+                $('#ac').css({
+                    "display": "none"
+                })
+                $('#kapat').css({
+                    "display": "initial"
+                })
+            }
+
+            function menukapa() {
+                $('#mobile-menu').css({
+                    "display": "none"
+                })
+                $('.menu').css({
+                    "box-shadow": "0px 5px 20px 0px rgba(0, 0, 0, .2)"
+                })
+                $('#kapat').css({
+                    "display": "none"
+                })
+                $('#ac').css({
+                    "display": "initial"
+                })
+            }
+        </script>
+
+        <script>
+            $('#sun').css({
+                "display": "none"
+            })
+            function darkmode_payidar(){
+                var payidar = document.body;
+                payidar.classList.toggle('darkmode')
+
+                $('#moon').css({
+                    "display": "none"
+                })
+                $('#sun').css({
+                    "display": "initial"
+                })
+            }
+            function darkmode_payidar2(){
+                var payidar = document.body;
+                payidar.classList.toggle('darkmode')
+
+                $('#moon').css({
+                    "display": "initial"
+                })
+                $('#sun').css({
+                    "display": "none"
+                })
+            }
+        </script>
+        <!-- /Scriptler Biter -->
+    </body>
+</html>
